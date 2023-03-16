@@ -405,24 +405,24 @@ body {
 }
 .darkcounter ul.countdown {
 	margin: 48px 0;
-	padding: 0;
+	padding-top: 50px;
 	display: block;
 	width: 530px;
-	float: left;
+	float: right;
 }
 .darkcounter ul.countdown li {
 	float: left;
 }
 .darkcounter ul.countdown li span {
-	color: #333;
-	font-size: 65px;
+	color: #f1f1f1;
+	font-size: 30px;
 	font-weight: 900;
 	line-height: 54px;
 	padding: 0;
 	margin: 0 23px 0 0;
 }
 .darkcounter ul.countdown li p {
-	color: #333;
+	color: #f1f1f1;
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 100;
@@ -431,12 +431,12 @@ body {
 .darkcounter ul.countdown .dayy {
 }
 .darkcounter ul.countdown .dayy li.day {
-	float: left;
+	float: right;
 }
 .darkcounter ul.countdown .dayy li.day span.days {
-	font-size: 180px;
+	font-size: 100px;
 	line-height: 112px;
-	color: #333;
+	color: #f1f1f1;
 	font-weight: 900;
 	float: left;
 	padding: 0;
@@ -449,20 +449,20 @@ body {
 .darkcounter ul.countdown .second li.sec {
 }
 .darkcounter ul.countdown .second li.sec span.seconds.last {
-	font-size: 42px;
+	font-size: 30px;
 	font-weight: 600;
 }
 .darkcounter ul.countdown .second li.sec span.ab {
-	font-size: 18px;
+	font-size: 10px;
 	font-weight: 100;
 	margin: 0 0px 0 -20px;
 }
 .darkcounter ul.countdown li.sec p.seconds_ref {
-	float: right;
+	float: left;
 	margin: 15px 55px 0 0;
 }
 .darkcounter .notify {
-	float: right;
+	float: left;
 	width: 480px;
 	margin: 70px 0 0 0;
 }
@@ -470,7 +470,7 @@ body {
 	color: #333;
 	float: right;
 	margin: 0 0 25px 0;
-	text-align: right;
+	text-align: left;
 }
 .darkcounter .notify input[type=email] {
 	background: rgba(255, 255, 255, 0.13);
@@ -590,48 +590,56 @@ body {
 /* ==================================================
    Card
 ================================================== */
-.card:hover {
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-	transform: translateY(-5px);
-}
-
-
-.card-container {
+.row {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	/*border: 1px solid #ccc;*/
-	padding: 20px;
-	margin-bottom: 20px;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+
 }
-.card {
-	margin: 40px;
+
+.col {
+	position: relative;
+	width: calc(33.33% - 10px);
+	margin:40px;
 	border-radius: 5px;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 	width: 300px;
 	border: 150px;
 }
 
-.card img {
+
+
+img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-.card-text {
-	padding: 20px;
-	text-align: center;
-}
-
-.card-text h2 {
-	font-size: 24px;
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
 	font-weight: bold;
-	margin-bottom: 10px;
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s ease;
 }
 
-.card-text p {
-	font-size: 16px;
-	line-height: 1.5;
-	/*color: #666;*/
+a:hover .overlay {
+	opacity: 1;
+}
+
+.row-tittle{
+	text-align: center;
+	margin: 5px 0;
+}
+h2 {
+	font-size: 20px;
+	font-weight: bold;
 }
