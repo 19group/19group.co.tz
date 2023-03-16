@@ -1,21 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
 body {
-	background: url(../images/banner.jpg) no-repeat center center fixed;
+	background: url(../images/banner.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Roboto', sans-serif;
+	font-family: "lato", sans-serif;
 }
 body.dark {
-	background: url(../images/ban2.jpg) no-repeat center center fixed;
+	background: url(../images/banner.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	font-family: 'Roboto', sans-serif;
+	font-family: "lato", sans-serif;
 }
 body.light {
 	background: url(../images/ban3.jpg) no-repeat center center fixed;
@@ -83,13 +83,24 @@ a {
 	background: #f6f903;
 }
 
+.left-side{
+	background-color: red;
+	height: 100vh;
+	width: 33.33%;
+	float: left;
+}
+.transparent-side {
+	height: 100vh;
+	width: 33.33%;
+	float: right;
+}
 
 /* ==================================================
    1. Logo
 ================================================== */
 .logo {
-	text-align: center;
-	padding: 54px 0 0 0;
+	text-align: justify;
+	padding: 10px 0 0 0;
 }
 .logo img.logo {
 	position: relative;
@@ -99,13 +110,81 @@ a {
 
 
 /* ==================================================
+   1. Info Button
+================================================== */
+#info-panel {
+	position: fixed;
+	top: 0;
+	right: -300px;
+	width: 300px;
+	height: 100%;
+	background-color: white;
+	transition: right 0.3s ease-in-out;
+}
+
+#info-panel.open {
+	right: 0;
+}
+
+
+
+/* Add styles for info button */
+.info-button {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #000;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1;
+}
+
+/* Add styles for side menu */
+.side-menu {
+	position: fixed;
+	top: 0;
+	right: -250px;
+	width: 250px;
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	transition: all 0.3s ease-in-out;
+	z-index: 2;
+}
+
+.side-menu .close-menu {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+	color: #000;
+	cursor: pointer;
+}
+
+.side-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+}
+
+.side-menu li {
+	padding: 10px;
+	font-size: 18px;
+	border-bottom: 1px solid #ddd;
+}
+
+
+/* ==================================================
    2. CountDown
 ================================================== */
 .counter {
-	margin: 8% 0 0 0;
+	margin: 2% 0 0 0;
 }
 .counter ul.countdown {
-	margin: 48px 0;
+	margin: 20px 0;
 	padding: 0;
 	display: block;
 	width: 530px;
@@ -141,7 +220,7 @@ a {
 	float: left;
 	padding: 0;
 }
-.darkcounter ul.countdown li.day span.days { color:#333;}
+.darkcounter ul.countdown li.day span.days { color:#d4af37;}
 .counter ul.countdown .hour {
 	margin: 18px 0 6px 0;
 }
@@ -223,6 +302,31 @@ a {
 
 
 /* ==================================================
+   Scroll bar
+================================================== */
+/* Define the styles for the scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #d4af37;
+	border-radius: 5px;
+}
+
+/* Apply the styles to the element(s) that will have a scrollbar */
+body {
+	scrollbar-width: thin;
+	scrollbar-color: #888 #f1f1f1;
+}
+
+
+
+/* ==================================================
    3. Footer
 ================================================== */
 .footer {
@@ -297,7 +401,7 @@ a {
    4. Home-4 Dark-countDown
 ================================================== */
 .darkcounter {
-	margin: 8% 0 0 0;
+	margin: 2% 0 0 0;
 }
 .darkcounter ul.countdown {
 	margin: 48px 0;
@@ -372,17 +476,19 @@ a {
 	background: rgba(255, 255, 255, 0.13);
 	color: #333;
 	font-size: 14px;
-	border: solid 3px #333;
+	border: solid 2px #333;
+	border-radius: 8px;
 	padding: 0 26% 0 2%;
 	width: 72%;
-	height: 52px;
+	height: 53px;
 }
 .darkcounter .notify input[type=submit] {
 	background: #333;
 	margin: -55px -3px 0 0;
 	padding: 0px 14px 0px 14px;
-	height: 52px;
+	height: 53px;
 	border: none;
+	border-radius: 5px;
 	color: #fff;
 	float: right;
 	font-weight: 900;
@@ -403,7 +509,7 @@ a {
 
 .darkcounter .notify input[type=submit]:hover {
 	color: #fff;
-	background: #69ae19;
+	background: #d4af37;
 }
 
 
@@ -480,400 +586,6 @@ a {
 }
 
 
-/* ==================================================
-   6. Home-1 Light-countDown
-================================================== */
-.lightcounter {
-	text-align: center;
-	margin: 5% 0 0 0;
-}
-.lightcounter ul.countdown_2 {
-	margin: 75px 0;
-	padding: 0;
-	display: block;
-	text-align: center;
-}
-.lightcounter ul.countdown_2 li {
-	display: inline-block;
-}
-.lightcounter ul.countdown_2 li span {
-	font-size: 80px;
-	font-weight: 500;
-	line-height: 80px;
-	padding: 0 20px;
-	color: #fff;
-}
-.lightcounter ul.countdown_2 li p {
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 100;
-	color: #fff;
-}
-:focus {
-	outline: none;
-}
-.lightcounter .lightnotify {
-	width: 62%;
-	text-align: center;
-	float: none;
-	display: inline-block;
-}
-.lightcounter .lightnotify p {
-	float: none;
-	margin: 0 0 10px 0;
-	text-align: center;
-	width: 65%;
-	display: inline-block;
-}
-.lightcounter .lightnotify .field {
-	width: 100%;
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-}
-.lightcounter .lightnotify input[type=email] {
-	background: rgba(255, 255, 255, 0.13);
-	color: #fff;
-	font-size: 14px;
-	border: solid 3px #fff;
-	padding: 0 22% 0 2%;
-	width: 37%;
-	height: 52px;
-	float: none;
-	display: inline-block;
-}
-.lightcounter .lightnotify input[type=submit] {
-	background: #fff;
-	margin: 0px 0 0 -129px;
-	padding: 0px 20px 0px 20px;
-	height: 52px;
-	border: none;
-	display: inline-block;
-	font-weight: 900;
-	cursor: pointer;
-	position: relative;
-	float: none;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-property: color, background-color;
-	transition-property: color, background-color;
-}
-.lightcounter .lightnotify input[type=submit]:hover {
-	color: #000;
-	background: #F6F903;
-}
-.lightsocial {
-	text-align: center;
-	display: inline-block;
-	margin: 42px 0 0 0;
-}
-.lightsocial ul {
-}
-.lightsocial ul li {
-	text-align: center;
-	float: left;
-	margin: 0 7px 0 0;
-	cursor: pointer;
-}
-.lightsocial ul li a.fa {
-	color: #fff;
-	font-size: 22px;
-	border: solid 2px #fff;
-	border-radius: 100%;
-	padding: 13px 0 0 0;
-	text-align: center;
-	display: inline-block;
-	width: 45px;
-	height: 32px;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-property: color, background-color;
-	transition-property: color, background-color;
-}
-.lightsocial a.fa.fb:hover {
-	color: #fff;
-	background: #3b5999;
-	border: solid 2px #3b5999;
-}
-.lightsocial a.fa.tw:hover {
-	color: #fff;
-	background: #55acef;
-	border: solid 2px #55acef;
-}
-.lightsocial a.fa.in:hover {
-	color: #fff;
-	background: #9e6f4f;
-	border: solid 2px #9e6f4f;
-}
-.lightsocial a.fa.gp:hover {
-	color: #fff;
-	background: #de4b39;
-	border: solid 2px #de4b39;
-}
-
-
-/* ==================================================
-   7. Home-1 Light-Footer
-================================================== */
-.lightfooter {
-	margin: 5% 0 0 0;
-	width: 100%;
-}
-.lightfooter p {
-	text-align: center;
-	font-size: 13px;
-	margin: 12px 0;
-}
-
-
-/* ==================================================
-   8. Home-5 Space-countDown
-================================================== */
-.spacecounter {
-	text-align: center;
-	margin: 5% 0 0 0;
-}
-.spacecounter ul.countdown_2 {
-	margin: 75px 0;
-	padding: 0;
-	display: block;
-	text-align: center;
-}
-.spacecounter ul.countdown_2 li {
-	display: inline-block;
-}
-.spacecounter ul.countdown_2 li span {
-	font-size: 80px;
-	font-weight: 500;
-	line-height: 80px;
-	padding: 0 20px;
-	color: #fff;
-}
-.spacecounter ul.countdown_2 li p {
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 100;
-	color: #fff;
-}
-.spacecounter .spacenotify {
-	width: 62%;
-	text-align: center;
-	float: none;
-	display: inline-block;
-}
-.spacecounter .spacenotify p {
-	float: none;
-	margin: 0 0 10px 0;
-	text-align: center;
-	width: 65%;
-	display: inline-block;
-}
-.spacecounter .spacenotify .field {
-	width: 100%;
-	text-align: center;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-}
-.spacecounter .spacenotify input[type=email] {
-	background: rgba(255, 255, 255, 0.13);
-	color: #fff;
-	font-size: 14px;
-	border: solid 3px #fff;
-	padding: 0 22% 0 2%;
-	width: 37%;
-	height: 52px;
-	float: none;
-}
-.spacecounter .spacenotify input[type=submit] {
-	background: #fff;
-	margin: 0px 0 0 -129px;
-	padding: 0px 20px 0px 20px;
-	height: 52px;
-	border: none;
-	font-weight: 900;
-	cursor: pointer;
-	position: relative;
-	float: none;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-property: color, background-color;
-	transition-property: color, background-color;
-}
-.spacecounter .spacenotify input[type=submit]:hover {
-	color: #000;
-	background: #f6f903;
-}
-.spacesocial {
-	text-align: center;
-	display: inline-block;
-	margin: 42px 0 0 0;
-}
-.spacesocial ul {
-}
-.spacesocial ul li {
-	text-align: center;
-	float: left;
-	margin: 0 7px 0 0;
-	cursor: pointer;
-}
-.spacesocial ul li a.fa {
-	color: #fff;
-	font-size: 22px;
-	border: solid 2px #fff;
-	border-radius: 100%;
-	padding: 13px 0 0 0;
-	text-align: center;
-	display: inline-block;
-	width: 45px;
-	height: 32px;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-property: color, background-color;
-	transition-property: color, background-color;
-}
-.spacesocial a.fa.fb:hover {
-	color: #fff;
-	background: #3b5999;
-	border: solid 2px #3b5999;
-}
-.spacesocial a.fa.tw:hover {
-	color: #fff;
-	background: #55acef;
-	border: solid 2px #55acef;
-}
-.spacesocial a.fa.in:hover {
-	color: #fff;
-	background: #9e6f4f;
-	border: solid 2px #9e6f4f;
-
-}
-.spacesocial a.fa.gp:hover {
-	color: #fff;
-	background: #de4b39;
-	border: solid 2px #de4b39;
-}
-.spacecounter h1{ color:#fff;}
-
-/* ==================================================
-   9. Home-5 Space-Footer
-================================================== */
-.spacefooter {
-	margin: 5% 0 0 0;
-	width: 100%;
-}
-.spacefooter p {
-	text-align: center;
-	font-size: 13px;
-	margin: 12px 0;
-}
-
-
-/* ==================================================
-   10. Home-1 canvas
-================================================== */
-canvas {
-	position: absolute !important;
-	width: 100% !important;
-	top: 0;
-	text-align: center;
-	height: 100% !important;
-	z-index: -1;
-}
-canvas{opacity: 0.5 ;}
-
-
-
-
-
-
-
-#result .success {
-	border: 1px solid #060;
-	background: #9C6;
-	color: #060;
-	font-size: 16px;
-	width: 96%;
-	display: inline-block;
-	padding: 8px 2%;
-
-}
-
-#result .error {
-	border:1px solid  #900;
-	background:#DFA9A9;
-	color:#900;
-	font-size:16px;
-	width:96%;
-	display: inline-block;
-	padding:8px 2%;
-	margin: 0 0 12px 0;
-}
-
-
-.mid #result .success{ width:56%;}
-.mid #result .error{ width:56%;}
-::-webkit-input-placeholder {
-	color:#fff;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-	color:#fff;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-	color:#fff;
-}
-
-:-ms-input-placeholder {
-	color:#fff;
-}
-
-
-.darkcounter ::-webkit-input-placeholder {
-	color:#333;
-}
-
-.darkcounter :-moz-placeholder { /* Firefox 18- */
-	color:#333;
-}
-
-.darkcounter ::-moz-placeholder {  /* Firefox 19+ */
-	color:#333;
-}
-
-.darkcounter :-ms-input-placeholder {
-	color:#333;
-}
 
 /* ==================================================
    Card
@@ -894,7 +606,6 @@ canvas{opacity: 0.5 ;}
 }
 .card {
 	margin: 40px;
-	/*background-color: #0000;*/
 	border-radius: 5px;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
