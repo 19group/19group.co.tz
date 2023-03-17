@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1169px) {
 	.container {
-		width: 92%;
+		width: 90%;
 	}
 	.logo {
 		padding: 18px 0 0 0;
@@ -58,16 +58,32 @@
 		float: none;
 		text-align: center;
 	}
+
+	.darkcounter ul.countdown .circle {
+		margin: 0 0 0 0;
+		height: 100%;
+		display: flex;
+	}
+
+	.darkcounter  .notify h1{
+		float: none;
+	}
+	.darkcounter  .notify p{
+		float: none;
+		text-align: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+	}
 }
 @media only screen and (max-width: 1024px) {
 	.counter {
 		text-align: center;
-		margin: 0% 0 0 0;
+		margin: 8% 0 0 0;
 	}
 	.counter ul.countdown {
 		display: inline-block;
 		float: none;
-		margin: 42px 0;
+		margin: 20px 0;
 		width: auto;
 	}
 	.counter ul.countdown li {
@@ -114,6 +130,10 @@
 	}
 	.spacefooter {
 		margin: 48px 0;
+	}
+
+	.darkcounter ul.countdown {
+		display:none;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -179,6 +199,11 @@
 		margin: 0 0;
 	}
 	canvas.snow-canvas {
+		display: none;
+	}
+	.darkcounter ul.countdown {
+		padding-top: 20px;
+		margin: 0 0 0 0;
 		display: none;
 	}
 }
@@ -310,6 +335,10 @@
 @media only screen and (max-width: 480px) {
 	.container {
 		width: 82%;
+	}
+	.darkcounter .notify h1{
+		font-size: 30px;
+		margin-top: 10px;
 	}
 	.logo img.logo {
 		width: 195px;
