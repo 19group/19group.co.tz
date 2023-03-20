@@ -76,6 +76,10 @@
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 	}
+	/*.our-units {*/
+	/*	margin: 0 0 0 0;*/
+	/*	padding-top: 100px;*/
+	/*}*/
 }
 @media only screen and (max-width: 1024px) {
 	.counter {
@@ -123,6 +127,16 @@
 		margin: 0 10px 0 25px;
 		padding: 0 0;
 	}
+	/*.our-units {*/
+	/*	margin: 0 0 0 0;*/
+	/*	padding-top: 100px;*/
+	/*}*/
+	/*.our-units h1{*/
+	/*	font-size: 35px;*/
+	/*}*/
+	/*.our-units p{*/
+	/*	font-size: 16px;*/
+	/*}*/
 	.lightfooter {
 		margin: 48px 0;
 	}
@@ -184,6 +198,16 @@
 		font-size: 48px;
 		line-height: normal;
 	}
+	/*.our-units {*/
+	/*	margin: 0 0 0 0;*/
+	/*	padding:100px;*/
+	/*}*/
+	/*.our-units h1 {*/
+	/*	font-size: 35px;*/
+	/*}*/
+	/*.our-units p {*/
+	/*	font-size: 16px;*/
+	/*}*/
 	.lightsocial ul li a.fa {
 		font-size: 18px;
 	}
@@ -223,117 +247,129 @@
 		font-size: 85px;
 		line-height: 52px;
 	}
-	.counter ul.countdown li span {
-		margin: 0 0px 0 0;
-	}
-	.counter ul.countdown li span {
-		font-size: 55px;
-		line-height: 53px;
-	}
-	li.sec span.seconds.last {
-		font-size: 31px;
-	}
-	.counter .notify p {
-		font-size: 12px;
-		margin: 0 0 8px 0;
-	}
-	.counter .notify input[type=text] {
-		border: solid 2px #fff;
-		padding: 0 2%;
-		width: 95%;
-		height: 38px;
-	}
-	.counter .notify input[type=submit] {
-		margin: -55px -5px 0 0;
 
-	}
-	.footer {
-		text-align: center;
-	}
-	.footer p {
-		float: none;
-		padding: 0px 0;
-	}
-	.footer .social {
-		text-align: center;
-		float: none;
-		display: inline-block;
-	}
-	.darkfooter {
-		text-align: center;
-	}
-	.darkfooter p {
-		float: none;
-		padding: 0px 0;
-	}
-	.darkfooter .social {
-		float: left;
-		text-align: center;
-		float: none;
-		display: inline-block;
-	}
-	.lightfooter {
-		text-align: center;
-		margin: 0 0;
-	}
-	.lightfooter p {
-		float: none;
-		padding: 0px 0;
-	}
-	.lightfooter .social {
-		text-align: center;
-		float: none;
-		display: inline-block;
-	}
-	.spacefooter {
-		text-align: center;
-		margin: 0 0;
-	}
-	.spacefooter p {
-		float: none;
-		padding: 0px 0;
-	}
-	.spacefooter .social {
-		text-align: center;
-		float: none;
-		display: inline-block;
-	}
-	.lightnotify {
-		margin: 24px 0 0 0;
-	}
-	.lightsocial {
-		margin: 25px 0 0 0;
-	}
-	.lightsocial ul li a.fa {
-	}
-	.lightcounter .lightnotify p {
-		width: 100%;
-	}
-	.lightcounter .lightnotify input[type=text] {
-		width: 73%;
-	}
-	.spacenotify {
-		margin: 24px 0 0 0;
-	}
-	.spacesocial {
-		margin: 25px 0 0 0;
-	}
-	.spacecounter .lightnotify p {
-		width: 100%;
-	}
-	.spacecounter .lightnotify input[type=text] {
-		width: 73%;
-	}
-	.mid #result .error {width: 96%;}
-	.mid #result .success{width: 96%;}
-	.footer {position: relative;margin: 25px 0 0 0;}
-	.darkfooter{position: relative;margin: 25px 0 0 0;}
-	canvas {
-		display: none !important;
-	}
-	.lightcounter .lightnotify input[type=submit] { margin: 0px 0 0 -4px; height: 56px;}
-	.spacecounter ul.countdown_2 {margin: 16px 0;}
-	.spacecounter .spacenotify input[type=submit] { margin: 0px 0 0 -8px; height: 56px;}}
+}
+.counter ul.countdown li span {
+	margin: 0 0px 0 0;
+}
+.counter ul.countdown li span {
+	font-size: 55px;
+	line-height: 53px;
+}
+li.sec span.seconds.last {
+	font-size: 31px;
+}
+.counter .notify p {
+	/*font-size: 15px;*/
+	margin: 0 0 8px 0;
+}
+.counter .notify input[type=text] {
+	border: solid 2px #fff;
+	padding: 0 2%;
+	width: 95%;
+	height: 38px;
+}
+.counter .notify input[type=submit] {
+	margin: -55px -5px 0 0;
+
+}
+/*.our-units {*/
+/*	margin: 0 0 0 0;*/
+/*	padding-top: 100px;*/
+/*}*/
+/*.our-units h1 {*/
+/*	font-size: 30px;*/
+/*}*/
+/*.our-units p{*/
+/*	font-size: 15px;*/
+/*}*/
+.footer {
+	text-align: center;
+}
+.footer p {
+	float: none;
+	padding: 0 0;
+}
+.footer .social {
+	text-align: center;
+	float: none;
+	display: inline-block;
+}
+.darkfooter {
+	text-align: center;
+}
+.darkfooter p {
+	float: none;
+	padding: 0px 0;
+}
+.darkfooter .social {
+	float: left;
+	text-align: center;
+	float: none;
+	display: inline-block;
+}
+.lightfooter {
+	text-align: center;
+	margin: 0 0;
+}
+.lightfooter p {
+	float: none;
+	padding: 0px 0;
+}
+.lightfooter .social {
+	text-align: center;
+	float: none;
+	display: inline-block;
+}
+.spacefooter {
+	text-align: center;
+	margin: 0 0;
+}
+.spacefooter p {
+	float: none;
+	padding: 0px 0;
+}
+.spacefooter .social {
+	text-align: center;
+	float: none;
+	display: inline-block;
+}
+.lightnotify {
+	margin: 24px 0 0 0;
+}
+.lightsocial {
+	margin: 25px 0 0 0;
+}
+.lightsocial ul li a.fa {
+}
+.lightcounter .lightnotify p {
+	width: 100%;
+}
+.lightcounter .lightnotify input[type=text] {
+	width: 73%;
+}
+.spacenotify {
+	margin: 24px 0 0 0;
+}
+.spacesocial {
+	margin: 25px 0 0 0;
+}
+.spacecounter .lightnotify p {
+	width: 100%;
+}
+.spacecounter .lightnotify input[type=text] {
+	width: 73%;
+}
+.mid #result .error {width: 96%;}
+.mid #result .success{width: 96%;}
+.footer {position: relative;margin: 25px 0 0 0;}
+.darkfooter{position: relative;margin: 25px 0 0 0;}
+canvas {
+	display: none !important;
+}
+
+
+
 @media only screen and (max-width: 480px) {
 	.container {
 		width: 82%;
@@ -371,6 +407,18 @@
 		font-size: 11px;
 		margin: -53px -2px 0 0;
 	}
+
+	/*.our-units {*/
+	/*	margin: 0 0 0 0;*/
+	/*	padding-top: 100px;*/
+	/*}*/
+	/*.our-units h1{*/
+	/*	font-size: 25px;*/
+	/*}*/
+	/*.our-units p{*/
+	/*	font-size: 12px;*/
+	/*	text-align: center;*/
+	/*}*/
 	.footer p {
 		font-size: 12px;
 		padding: 0px 0;
