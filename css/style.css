@@ -55,8 +55,8 @@ body.space {
 }
 body.space.bg-six {background: url(../images/banner6.jpg) no-repeat center center fixed;}
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 h3 {
 	font-size: 14px;
@@ -213,7 +213,7 @@ a {
 	font-weight: 100;
 	line-height: 45px;
 }
-.counter ul.countdown .dayy {
+.counter ul.countdown .day {
 }
 .counter ul.countdown li.day {
 	float: left;
@@ -241,7 +241,7 @@ a {
 .counter ul.countdown li.sec span.ab {
 	font-size: 18px;
 	font-weight: 100;
-	margin: 0 0px 0 -20px;
+	margin: 0 0 0 -20px;
 }
 .counter ul.countdown li.sec p.seconds_ref {
 	float: right;
@@ -269,14 +269,13 @@ a {
 .counter .notify input[type=submit] {
 	background: #fff;
 	margin: -55px -3px 0 0;
-	padding: 0px 14px 0px 14px;
+	padding: 0 14px 0 14px;
 	height: 52px;
 	border: none;
 	float: right;
 	font-weight: 900;
 	cursor: pointer;
 	position: relative;
-	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	-webkit-backface-visibility: hidden;
@@ -337,10 +336,10 @@ body {
 ================================================== */
 .footer {
 	position: fixed;
-	bottom: 0px;
+	bottom: 0;
 	border-top: solid 3px rgba(255, 255, 255, 0.25);
 	width: 100%;
-	left: 0px;
+	left: 0;
 }
 .footer p {
 	float: left;
@@ -368,8 +367,6 @@ body {
 	display: inline-block;
 	height: 18px;
 	width: 25px;
-	text-align: center;
-	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	-webkit-backface-visibility: hidden;
@@ -466,7 +463,6 @@ body {
 	top:0;
 	left:0;
 	z-index: 1;
-	text-align: center;
 	width: 100%;
 }
 .darkcounter ul.countdown li {
@@ -487,12 +483,12 @@ body {
 	font-weight: 100;
 	line-height: 45px;
 }
-.darkcounter ul.countdown .dayy {
+.darkcounter ul.countdown .day {
 }
-.darkcounter ul.countdown .dayy li.day {
+.darkcounter ul.countdown .day li.day {
 	float: right;
 }
-.darkcounter ul.countdown .dayy li.day span.days {
+.darkcounter ul.countdown .day li.day span.days {
 	font-size: 100px;
 	line-height: 112px;
 	color: #f1f1f1;
@@ -514,7 +510,7 @@ body {
 .darkcounter ul.countdown .second li.sec span.ab {
 	font-size: 10px;
 	font-weight: 100;
-	margin: 0 0px 0 -20px;
+	margin: 0 0 0 -20px;
 }
 .darkcounter ul.countdown li.sec p.seconds_ref {
 	float: left;
@@ -555,7 +551,7 @@ body {
 .darkcounter .notify input[type=submit] {
 	background: #333;
 	margin: -55px -3px 0 0;
-	padding: 0px 14px 0px 14px;
+	padding: 0 14px 0 14px;
 	height: 53px;
 	border: none;
 	border-radius: 5px;
@@ -564,7 +560,6 @@ body {
 	font-weight: 900;
 	cursor: pointer;
 	position: relative;
-	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	-webkit-backface-visibility: hidden;
@@ -587,17 +582,21 @@ body {
    5. Home-4 Dark-footer
 ================================================== */
 .darkfooter {
-	position: fixed;
-	bottom: 0px;
-	border-top: 40px ;
+	position:fixed;
+	bottom: 0;
+	border-top: 10px ;
+	padding-bottom: 10px;
 	width: 100%;
-	left: 0px;
+	left: 0;
 }
 .darkfooter p {
 	color: #d4af37;
-	float: left;
 	font-size: 13px;
 	margin: 12px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .darkfooter .social {
 	float: right;
@@ -621,8 +620,6 @@ body {
 	display: inline-block;
 	height: 18px;
 	width: 25px;
-	text-align: center;
-	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	-webkit-backface-visibility: hidden;
@@ -669,9 +666,38 @@ body {
 padding-bottom: 30px;
 }
 
+.our-units {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-top: 70px;
+}
+.our-units h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-bottom: 10px;
+	color:#d4af37;
+	padding-top: 50px;
+}
+
+.our-units p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-bottom: 10px;
+	color:#f1f1f1;
+	font-size: 20px;
+	text-align: center;
+}
 .col {
 	position: relative;
-	width: calc(33.33% - 10px);
 	margin:40px;
 	border-radius: 5px;
 	overflow: hidden;
