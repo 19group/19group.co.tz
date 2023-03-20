@@ -67,6 +67,8 @@
 
 	.darkcounter  .notify h1{
 		float: none;
+		font-size: 35px;
+		text-align: center;
 	}
 	.darkcounter  .notify p{
 		float: none;
