@@ -8,7 +8,7 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: "lato", sans-serif;
-	height: 100vh;
+	/*height: 50vh;*/
 }
 body.dark {
 	background: url(../images/banner.png) no-repeat center center fixed;
@@ -663,7 +663,7 @@ body {
 	align-items: center;
 	width: 100%;
 	flex-wrap: wrap;
-padding-bottom: 30px;
+/*padding-bottom: 30px;*/
 }
 
 .our-units {
@@ -711,13 +711,16 @@ padding-bottom: 30px;
 	/*height:*/
 }
 .col h2{
-	color:#d4af37;
+	color:#fff6f5;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
 	padding: 10px 0;
+	transition: color 0.3s ease;;
 }
-
+.col:hover h2{
+	color:#d4af37;
+}
 
 img {
 	display: block;
