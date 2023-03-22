@@ -8,7 +8,7 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: "lato", sans-serif;
-	height: 100vh;
+	/*height: 50vh;*/
 }
 body.dark {
 	background: url(../images/banner.png) no-repeat center center fixed;
@@ -663,7 +663,7 @@ body {
 	align-items: center;
 	width: 100%;
 	flex-wrap: wrap;
-padding-bottom: 30px;
+/*padding-bottom: 30px;*/
 }
 
 .our-units {
@@ -697,15 +697,30 @@ padding-bottom: 30px;
 	text-align: center;
 }
 .col {
-	position: relative;
+	/*position: relative;*/
 	margin:40px;
 	border-radius: 5px;
 	overflow: hidden;
 	width: 300px;
 	border: 150px;
+	display: inline-block;
 }
-
-
+.col a{
+	position:relative;
+	width: 100%;
+	/*height:*/
+}
+.col h2{
+	color:#fff6f5;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+	transition: color 0.3s ease;;
+}
+.col:hover h2{
+	color:#d4af37;
+}
 
 img {
 	display: block;
@@ -718,7 +733,7 @@ img {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 10px;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	font-weight: bold;
@@ -730,6 +745,8 @@ img {
 a:hover .overlay {
 	opacity: 1;
 }
+
+
 
 .row-tittle{
 	text-align: center;
