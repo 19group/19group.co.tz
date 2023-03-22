@@ -697,14 +697,26 @@ padding-bottom: 30px;
 	text-align: center;
 }
 .col {
-	position: relative;
+	/*position: relative;*/
 	margin:40px;
 	border-radius: 5px;
 	overflow: hidden;
 	width: 300px;
 	border: 150px;
+	display: inline-block;
 }
-
+.col a{
+	position:relative;
+	width: 100%;
+	/*height:*/
+}
+.col h2{
+	color:#d4af37;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0;
+}
 
 
 img {
@@ -718,7 +730,7 @@ img {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 10px;
+	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	font-weight: bold;
@@ -730,6 +742,8 @@ img {
 a:hover .overlay {
 	opacity: 1;
 }
+
+
 
 .row-tittle{
 	text-align: center;
