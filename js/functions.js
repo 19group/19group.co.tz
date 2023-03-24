@@ -72,6 +72,26 @@ function register($form) {
     });
 }
 
+
+function init() {
+	const loader = document.querySelector(".preloader");
+	const wrap= document.querySelector(".wrap");
+	const rmLoader ="preloader-content-loaded";
+	const addWrap ="wrap-content-loaded";
+
+	setTimeout(() => {
+		loader.classList.add(rmLoader);
+		wrap.classList.add(addWrap);
+	},1000);
+}
+init();
+
+// window.addEventListener("load", function() {
+// 	const loader = document.querySelector(".loader");
+// 	loader.className += " hidden";
+// });
+
+
 // window.addEventListener("load", function() {
 // 	const loader = document.querySelector(".loader");
 // 	setTimeout(function() {
