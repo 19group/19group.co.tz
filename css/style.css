@@ -126,28 +126,7 @@ body.space.bg-six {
     background: url(../images/banner6.jpg) no-repeat center center fixed;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-h3 {
-    font-size: 14px;
-    color: #000;
-}
-
-p {
-    font-size: 18px;
-    color: #fff;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
 
 .clear {
     clear: both;
