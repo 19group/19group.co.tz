@@ -1,0 +1,19 @@
+@import "../utilities/variables";
+
+h3 {
+    font-size: 1rem;
+    color: $color-black;
+}
+
+p {
+    font-size: 1rem;
+    color: $color-white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
