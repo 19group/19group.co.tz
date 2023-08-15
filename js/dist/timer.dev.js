@@ -1,7 +1,7 @@
 "use strict";
 
 // Set the date and time for the countdown
-var countdownDate = new Date("2023-06-31T12:00:00").getTime(); // Update the countdown every second
+var countdownDate = new Date("2023-12-31T12:00:00").getTime(); // Update the countdown every second
 
 var countdownInterval = setInterval(function () {
   // Get the current date and time
